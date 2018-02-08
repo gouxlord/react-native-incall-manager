@@ -45,6 +45,14 @@ class InCallManager {
         _InCallManager.turnScreenOn();
     }
 
+    stopProximitySensor() {
+        _InCallManager.stopProximitySensor();
+    }
+
+    startProximitySensor() {
+        _InCallManager.startProximitySensor();
+    }
+
     async getIsWiredHeadsetPluggedIn() {
         if (Platform.OS === 'ios') {
             return await _InCallManager.getIsWiredHeadsetPluggedIn();
