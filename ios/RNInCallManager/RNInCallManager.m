@@ -160,7 +160,7 @@ RCT_EXPORT_METHOD(start:(NSString *)mediaType
     }
 
     if ([_media isEqualToString:@"audio"]) {
-        [self startProximitySensor];
+        // [self startProximitySensor];
     }
     [self setKeepScreenOn:YES];
     _audioSessionInitialized = YES;
